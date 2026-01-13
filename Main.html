@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roan Chipman CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roan Chipman Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" >
+  <link rel="stylesheet" href="styles.css" >
+ 
 </head>
-<body>
-    <h1>Hello</h1>
+
+<body class="bg-black text-white min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="p-6 flex justify-between items-center border-b border-gray-700">
+    <h1 class="text-2xl font-bold text-green-500">Roan Chipman</h1>
+    <nav class="space-x-4">
+      <a href="#projects" class="hover:text-green-500">Projects</a>
+      <a href="#about" class="hover:text-green-500">About</a>
+      <a href="#contact" class="hover:text-green-500">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col md:flex-row items-center p-8 gap-8 md:gap-16 mt-10 fade-in">
+    <img src="./pictures/PXL_20250625_201058332.jpg" alt="Roan Chipman" class="w-40 h-40 rounded-full border-4 border-green-500 shadow-lg" />
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-2">Hi, I'm Roan.</h2>
+      <h3 class="text-2xl font-semibold mb-2">Creative Web Developer and Designer</h3>
+      <p class="text-gray-400 max-w-xl">American-born, European-educated, battle-tested in classrooms and commercial kitchens, 
+        creative professional pursuing new opportunities.</p>
+        <br>
+         <p class="text-gray-400 max-w-xl">Fully fluent in English and German with intermediate language level 
+        knowledge of Spanish and Portuguese. Knowledgeable on Figma, HTML5, CSS3, JavaScript, Python, C/C#/C++, Go (Golang) and ReactJS. 
+</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="p-8 fade-in">
+    <h3 class="text-2xl font-semibold text-green-500 mb-4">Projects</h3>
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Project Card -->
+      <div class="bg-gray-900 p-4 rounded-xl shadow hover:shadow-green-500/30 transition">
+        <h4 class="text-xl font-semibold">Project One</h4>
+        <p class="text-gray-400 text-sm mt-2">A brief description of your project. What it does, tools used, and why it's cool.</p>
+      </div>
+      <!-- Repeat for other projects -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="p-8 fade-in">
+    <h3 class="text-2xl font-semibold text-green-500 mb-4">About</h3>
+    <p class="text-gray-400 max-w-2xl">
+      I’m Roan, a web designer and developer with a background in both the creative and technical sides of building websites. I enjoy crafting intuitive, elegant, and responsive web experiences.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-8 fade-in">
+    <h3 class="text-2xl font-semibold text-green-500 mb-4">Contact</h3>
+    <form class="max-w-md space-y-4">
+      <input type="text" placeholder="Name" class="w-full p-2 bg-gray-800 border border-gray-600 rounded text-white" />
+      <input type="email" placeholder="Email" class="w-full p-2 bg-gray-800 border border-gray-600 rounded text-white" />
+      <textarea placeholder="Message" class="w-full p-2 bg-gray-800 border border-gray-600 rounded text-white h-32"></textarea>
+      <button type="submit" class="bg-green-500 text-black px-4 py-2 rounded hover:bg-green-400">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-auto text-center p-4 border-t border-gray-700 text-gray-500 text-sm">
+    &copy; 2025 Roan Chipman. All rights reserved.
+  </footer>
 </body>
+
 </html>
