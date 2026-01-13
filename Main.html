@@ -24,6 +24,7 @@
     </nav>
   </header>
 
+
   <!-- Hero Section -->
   <section class="flex flex-col md:flex-row items-center p-8 gap-8 md:gap-16 mt-10 fade-in">
     <img src="./pictures/PXL_20250625_201058332.jpg" alt="Roan Chipman" class="w-40 h-40 rounded-full border-4 border-green-500 shadow-lg" />
@@ -75,6 +76,18 @@
   <footer class="mt-auto text-center p-4 border-t border-gray-700 text-gray-500 text-sm">
     &copy; 2025 Roan Chipman. All rights reserved.
   </footer>
+  
+  <script>
+  window.chatbaseConfig = {
+    showFloatingInitialMessages: true,          // enable floating messages
+    floatingInitialMessagesDelay: 2,            // show after 2 seconds
+    floatingMessagesOncePerSession: true        // only once per session
+  };
+</script>
+
+  <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="q6BcnvXl-yfGkNY0vZArw";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
 </body>
 
 </html>
