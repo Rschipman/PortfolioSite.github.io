@@ -1,5 +1,11 @@
 body {
       font-family: 'Inter', sans-serif;
+      background-color: #c9f2c7;
+      color: #243119;
+    }
+
+    h1, h2, h3 {
+      color:#629460;
     }
     .fade-in {
       opacity: 0;

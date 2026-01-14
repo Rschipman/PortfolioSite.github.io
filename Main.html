@@ -13,40 +13,45 @@
  
 </head>
 
-<body class="bg-black text-white min-h-screen flex flex-col">
+<body class="min-h-screen flex flex-col">
   <!-- Header -->
   <header class="p-6 flex justify-between items-center border-b border-gray-700">
-    <h1 class="text-2xl font-bold text-green-500">Roan Chipman</h1>
+    <h1 class="text-2xl font-bold ">Roan Chipman</h1>
     <nav class="space-x-4">
       <a href="#projects" class="hover:text-green-500">Projects</a>
       <a href="#about" class="hover:text-green-500">About</a>
       <a href="#contact" class="hover:text-green-500">Contact</a>
+      <a href="https://www.linkedin.com/in/roanchipman" target="_blank" class="hover:text-green-500">LinkedIn</a>
+      <a href="https://github.com/roanchipman" target="_blank" class="hover:text-green-500">GitHub</a>
     </nav>
   </header>
 
+
   <!-- Hero Section -->
   <section class="flex flex-col md:flex-row items-center p-8 gap-8 md:gap-16 mt-10 fade-in">
-    <img src="./pictures/PXL_20250625_201058332.jpg" alt="Roan Chipman" class="w-40 h-40 rounded-full border-4 border-green-500 shadow-lg" />
+    <img src="./pictures/robotTalk.GIF" alt="Ro-bot" class="w-40 h-40 " />
     <div>
-      <h2 class="text-3xl md:text-4xl font-bold mb-2">Hi, I'm Roan.</h2>
-      <h3 class="text-2xl font-semibold mb-2">Creative Web Developer and Designer</h3>
-      <p class="text-gray-400 max-w-xl">American-born, European-educated, battle-tested in classrooms and commercial kitchens, 
-        creative professional pursuing new opportunities.</p>
-        <br>
-         <p class="text-gray-400 max-w-xl">Fully fluent in English and German with intermediate language level 
-        knowledge of Spanish and Portuguese. Knowledgeable on Figma, HTML5, CSS3, JavaScript, Python, C/C#/C++, Go (Golang) and ReactJS. 
-</p>
+      <h2 class="text-3xl md:text-4xl font-bold mb-2">Welcome!</h2>
+      <h3 class="text-2xl font-semibold mb-2">I'm Ro-bot, Roan's personal portfolio information bot. <br> 
+        You can find me on the bottom right corner of the screen as well as throughout the site! <br> 
+        Feel free to ask me any and all questions about Roan and her work!
+      </h3>
+      <p class="max-w-xl"> Now, allow me to introduce you to my creator: <br>
+        <b>Roan Chipman, American-born, European-educated and world traveled. </b></p> 
+      <p class="max-w-xl"><br> After years of being battle-tested in classrooms and commercial kitchens she now keeps her 
+        skills sharp in the world of web development and design with freelance and personal projects.</p>
+      
     </div>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" class="p-8 fade-in">
-    <h3 class="text-2xl font-semibold text-green-500 mb-4">Projects</h3>
+    <h3 class="text-2xl font-semibold mb-4">Projects</h3>
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       <!-- Project Card -->
       <div class="bg-gray-900 p-4 rounded-xl shadow hover:shadow-green-500/30 transition">
         <h4 class="text-xl font-semibold">Project One</h4>
-        <p class="text-gray-400 text-sm mt-2">A brief description of your project. What it does, tools used, and why it's cool.</p>
+        <p class=" text-sm mt-2">A brief description of your project. What it does, tools used, and why it's cool.</p>
       </div>
       <!-- Repeat for other projects -->
     </div>
@@ -54,15 +59,15 @@
 
   <!-- About Section -->
   <section id="about" class="p-8 fade-in">
-    <h3 class="text-2xl font-semibold text-green-500 mb-4">About</h3>
-    <p class="text-gray-400 max-w-2xl">
+    <h3 class="text-2xl font-semibold mb-4">About</h3>
+    <p class="max-w-2xl">
       I’m Roan, a web designer and developer with a background in both the creative and technical sides of building websites. I enjoy crafting intuitive, elegant, and responsive web experiences.
     </p>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="p-8 fade-in">
-    <h3 class="text-2xl font-semibold text-green-500 mb-4">Contact</h3>
+    <h3 class="text-2xl font-semibold  mb-4">Contact</h3>
     <form class="max-w-md space-y-4">
       <input type="text" placeholder="Name" class="w-full p-2 bg-gray-800 border border-gray-600 rounded text-white" />
       <input type="email" placeholder="Email" class="w-full p-2 bg-gray-800 border border-gray-600 rounded text-white" />
@@ -75,6 +80,18 @@
   <footer class="mt-auto text-center p-4 border-t border-gray-700 text-gray-500 text-sm">
     &copy; 2025 Roan Chipman. All rights reserved.
   </footer>
+  
+  <script>
+  window.chatbaseConfig = {
+    showFloatingInitialMessages: true,          // enable floating messages
+    floatingInitialMessagesDelay: 2,            // show after 2 seconds
+    floatingMessagesOncePerSession: true        // only once per session
+  };
+</script>
+
+  <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="q6BcnvXl-yfGkNY0vZArw";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
 </body>
 
 </html>
