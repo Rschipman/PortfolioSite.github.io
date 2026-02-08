@@ -14,19 +14,20 @@
 </head>
 
 <body class="min-h-screen flex flex-col">
+  
   <!-- Header -->
-  <header class="p-6 flex justify-between items-center border-b border-gray-700">
-    <h1 class="text-2xl font-bold ">Roan Chipman</h1>
-    <nav class="space-x-4">
-      <a href="#projects" class="hover:text-green-500">Projects</a>
-      <a href="#about" class="hover:text-green-500">About</a>
-      <a href="#contact" class="hover:text-green-500">Contact</a>
-      <a href="https://www.linkedin.com/in/roanchipman" target="_blank" class="hover:text-green-500">LinkedIn</a>
-      <a href="https://github.com/roanchipman" target="_blank" class="hover:text-green-500">GitHub</a>
-    </nav>
+  <header class="p-4 flex flex-col gap-4 md:flex-row md:justify-between md:items-center border-b border-gray-700">
+  <h1 class="text-xl font-bold">Roan Chipman</h1>
+
+  <nav class="flex flex-wrap gap-3 text-sm">
+    <a href="#projects" class="hover:text-green-500">Projects</a>
+    <a href="#about" class="hover:text-green-500">About</a>
+    <a href="#contact" class="hover:text-green-500">Contact</a>
+    <a href="https://linkedin.com/in/roanchipman" target="_blank" class="hover:text-green-500">LinkedIn</a>
+    <a href="https://github.com/roanchipman" target="_blank" class="hover:text-green-500">GitHub</a>
+  </nav>
   </header>
-
-
+  
   <!-- Hero Section -->
 <section class="flex flex-col md:flex-row items-center p-8 gap-10 mt-12">
   <img src="./pictures/robotTalk.GIF" alt="Ro-bot"
@@ -59,21 +60,40 @@
     <h3 class="text-2xl font-semibold mb-4">Projects</h3>
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       <!-- Project Card -->
-      <div class="bg-gray-900 p-4 rounded-xl shadow hover:shadow-green-500/30 transition">
-        <h4 class="text-xl font-semibold">Project One</h4>
-        <p class=" text-sm mt-2">A brief description of your project. What it does, tools used, and why it's cool.</p>
+      <div class="bg-gray-900 p-5 rounded-xl border border-gray-800
+            hover:border-green-500/50 transition">
+
+  <h4 class="text-xl font-semibold mb-1">
+    Streamer Homepage – Rhowyen
+  </h4>
+
+  <p class="text-sm text-gray-400 mb-3">
+    Custom streamer homepage with themed UI, collapsible sections,
+    community embeds, and interactive elements.
+  </p>
+
+  <p class="text-xs text-green-400 mb-4">
+    HTML • Tailwind CSS • JavaScript • GitHub Pages
+  </p>
+
+  <div class="flex gap-4 text-sm">
+    <a href="./projects/rhowyen.html" class="hover:text-green-500">
+      Case Study
+    </a>
+    <a href="rhowyen.github.io" class="hover:text-green-500">
+      Live Site
+    </a>
+  </div>
       </div>
-      <!-- Repeat for other projects -->
-    </div>
+      
   </section>
 
   <!-- About Section -->
-  <section id="about" class="p-8 fade-in">
-    <h3 class="text-2xl font-semibold mb-4">About</h3>
-    <p class="max-w-2xl">
-      I’m Roan, a web designer and developer with a background in both the creative and technical sides of building websites. I enjoy crafting intuitive, elegant, and responsive web experiences.
-    </p>
-  </section>
+  <p class="max-w-2xl text-gray-300">
+  I’m a frontend developer with a background spanning creative design,
+  technical problem-solving, and real-world production environments.
+  I enjoy turning ideas into intuitive, accessible, and polished web interfaces.
+  </p>
 
   <!-- Contact Section -->
   <section id="contact" class="p-8 fade-in">
@@ -82,7 +102,7 @@
       <input type="text" placeholder="Name" class="w-full p-2 bg-gray-800 border border-gray-600 rounded text-white" />
       <input type="email" placeholder="Email" class="w-full p-2 bg-gray-800 border border-gray-600 rounded text-white" />
       <textarea placeholder="Message" class="w-full p-2 bg-gray-800 border border-gray-600 rounded text-white h-32"></textarea>
-      <button type="submit" class="bg-green-500 text-black px-4 py-2 rounded hover:bg-green-400">Send</button>
+      <button type="submit" class="bg-green-500 text-black px-5 py-2 rounded font-medium hover:bg-green-400 transition">Send Message</button>
     </form>
   </section>
 
