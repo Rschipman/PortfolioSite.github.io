@@ -1,8 +1,8 @@
 # Roan Chipman – Portfolio Website
 
-This repository contains the source code for my personal portfolio website. The site is designed to showcase selected frontend projects with detailed case studies, focusing on clarity, usability, and thoughtful design decisions.
+This repository contains the source code for my personal portfolio website. The site showcases selected frontend projects through detailed case studies and provides a direct contact method for professional inquiries.
 
-The portfolio is deployed using GitHub Pages and built with a mobile-first approach to ensure accessibility and performance across devices.
+The portfolio is deployed using GitHub Pages and built with a mobile-first, accessibility-conscious approach.
 
 ## Live Site
 
@@ -10,15 +10,16 @@ https://rschipman.github.io/PortfolioSite.github.io/
 
 ## Overview
 
-Rather than functioning as a simple project gallery, this portfolio emphasizes case studies that explain the reasoning, challenges, and solutions behind each project. The goal is to provide clear insight into both my technical and design decision-making processes.
+This portfolio emphasizes clarity, usability, and real-world problem solving. Each featured project includes a case study outlining goals, design decisions, challenges, and outcomes.
 
-The structure is intentionally lightweight and framework-minimal to prioritize speed, maintainability, and ease of expansion.
+The codebase is intentionally lightweight and framework-minimal to prioritize performance and maintainability.
 
 ## Built With
 
 - HTML5 (semantic markup)
 - Tailwind CSS (utility-first styling)
 - Vanilla JavaScript
+- Formspree (contact form handling)
 - GitHub Pages (deployment)
 
 ## Project Structure
@@ -33,23 +34,18 @@ PortfolioSite.github.io/
    └─ portfolio-refresh.html
 
 
-## Case Studies
+## Contact Form
 
-### Streamer Homepage – Rhowyen
+The contact form is powered by Formspree and works on GitHub Pages without a backend.
 
-A custom-designed homepage for a live streamer featuring themed UI, collapsible sections, community embeds, and interactive elements. This project balances strong personality-driven visuals with usability, responsiveness, and accessibility.
+Features include:
 
-### Personal Portfolio Refresh
+* Client-side form submission via Fetch API
+* Success and error messaging
+* Honeypot field for basic spam protection
+* No page reload on submission
 
-A complete redesign of my personal portfolio focused on mobile-first layout, clear navigation, and recruiter-friendly presentation. This project emphasizes readable typography, consistent internal linking, and GitHub Pages–compatible deployment.
-
-## Design Goals
-
-* Mobile-first responsive layout
-* Clear visual hierarchy and readable typography
-* Minimal, intentional color palette
-* Reliable internal navigation for GitHub Pages
-* Simple structure that supports future growth
+Messages are delivered directly to my email inbox.
 
 ## Local Development
 
@@ -69,3 +65,4 @@ Frontend Developer & Web Designer
 
 GitHub: [https://github.com/Rschipman](https://github.com/Rschipman)
 LinkedIn: [https://www.linkedin.com/in/roanchipman](https://www.linkedin.com/in/roanchipman)
+
