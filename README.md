@@ -23,7 +23,7 @@ The codebase is intentionally lightweight and framework-minimal to prioritize pe
 - GitHub Pages (deployment)
 
 ## Project Structure
-
+ ````text
 PortfolioSite.github.io/
 ├─ index.html
 ├─ README.md
@@ -33,7 +33,7 @@ PortfolioSite.github.io/
    ├─ rhowyen.html
    └─ portfolio-refresh.html
 
-
+````
 ## Contact Form
 
 The contact form is powered by Formspree and works on GitHub Pages without a backend.
