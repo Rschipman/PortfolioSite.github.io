@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rhowyen Streamer Homepage | Case Study</title>
+  <title>Roan Chipman | Frontend Developer</title>
+
+  <meta name="description" content="Frontend developer portfolio for Roan Chipman. Projects built with Tailwind CSS, JavaScript, and modern web tools." />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,61 +17,99 @@
   </style>
 </head>
 
-<body class="bg-gray-950 text-gray-200 min-h-screen">
+<body class="min-h-screen bg-gray-950 text-gray-200 flex flex-col">
 
-  <main class="p-6 max-w-4xl mx-auto">
+  <!-- Header -->
+  <header class="p-4 flex flex-col gap-4 md:flex-row md:justify-between md:items-center border-b border-gray-800">
+    <h1 class="text-xl font-bold">Roan Chipman</h1>
+    <nav class="flex flex-wrap gap-4 text-sm">
+      <a href="#projects" class="hover:text-green-400">Projects</a>
+      <a href="#about" class="hover:text-green-400">About</a>
+      <a href="#contact" class="hover:text-green-400">Contact</a>
+      <a href="https://www.linkedin.com/in/roanchipman" target="_blank" class="hover:text-green-400">LinkedIn</a>
+      <a href="https://github.com/Rschipman" target="_blank" class="hover:text-green-400">GitHub</a>
+    </nav>
+  </header>
 
-    <a href="../index.html" class="text-sm text-green-400 hover:text-green-300">
-      ← Back to Portfolio
-    </a>
+  <!-- Hero -->
+  <section class="p-6 mt-10 flex flex-col gap-8 md:flex-row md:items-center max-w-5xl mx-auto">
+    <img src="./pictures/robotTalk.GIF" alt="Ro-bot"
+         class="w-28 h-28 md:w-36 md:h-36 opacity-90" />
+    <div>
+      <h2 class="text-4xl font-extrabold mb-2">
+        Hi, I’m <span class="text-green-400">Roan Chipman</span>
+      </h2>
+      <p class="text-xl text-gray-300 mb-4">
+        Frontend Developer & Web Designer
+      </p>
+      <p class="max-w-xl text-gray-400">
+        I build clean, responsive, and thoughtfully designed web experiences
+        using modern tools like Tailwind CSS and JavaScript.
+      </p>
+      <p class="mt-4 text-xs text-gray-500">
+        This site includes a custom portfolio assistant (Ro-bot) for guided navigation.
+      </p>
+    </div>
+  </section>
 
-    <h1 class="text-3xl font-extrabold mt-4 mb-2">
-      Streamer Homepage – Rhowyen
-    </h1>
+  <!-- Projects -->
+  <section id="projects" class="p-6 mt-16 max-w-6xl mx-auto">
+    <h3 class="text-2xl font-semibold mb-6">Projects</h3>
 
-    <p class="text-gray-400 mb-8">
-      A custom-designed homepage for a live streamer focused on cozy,
-      forest-themed aesthetics and community interaction.
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Rhowyen Project -->
+      <div class="bg-gray-900 p-5 rounded-xl border border-gray-800 hover:border-green-400/50 transition">
+        <h4 class="text-xl font-semibold mb-1">
+          Streamer Homepage – Rhowyen
+        </h4>
+        <p class="text-sm text-gray-400 mb-3">
+          Custom streamer homepage featuring themed UI, collapsible sections,
+          community embeds, and interactive elements.
+        </p>
+        <p class="text-xs text-green-400 mb-4">
+          HTML • Tailwind CSS • JavaScript • GitHub Pages
+        </p>
+        <div class="flex gap-4 text-sm">
+          <a href="projects/rhowyen.html" class="hover:text-green-400">Case Study</a>
+          <a href="https://rschipman.github.io/PortfolioSite.github.io/projects/rhowyen.html" target="_blank" class="hover:text-green-400">Live</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="p-6 mt-16 max-w-4xl mx-auto">
+    <h3 class="text-2xl font-semibold mb-4">About</h3>
+    <p class="text-gray-300">
+      I’m a frontend developer with a background spanning creative design,
+      technical problem-solving, and real-world production environments.
+      I enjoy crafting intuitive, accessible, and polished web interfaces.
     </p>
+  </section>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-2">The Goal</h2>
-      <p class="text-gray-300">
-        Build a centralized, personality-driven homepage that highlights
-        streaming links, community spaces, and live status while remaining
-        usable and readable on mobile devices.
-      </p>
-    </section>
+  <!-- Contact -->
+  <section id="contact" class="p-6 mt-16 max-w-md mx-auto">
+    <h3 class="text-2xl font-semibold mb-4">Contact</h3>
+    <form class="space-y-4">
+      <input required type="text" placeholder="Name"
+        class="w-full p-2 bg-gray-900 border border-gray-700 rounded" />
+      <input required type="email" placeholder="Email"
+        class="w-full p-2 bg-gray-900 border border-gray-700 rounded" />
+      <textarea required placeholder="Message"
+        class="w-full p-2 bg-gray-900 border border-gray-700 rounded h-32"></textarea>
+      <button type="submit"
+        class="bg-green-400 text-black px-5 py-2 rounded font-medium hover:bg-green-300 transition">
+        Send Message
+      </button>
+    </form>
+  </section>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-2">Tech Stack</h2>
-      <ul class="list-disc list-inside text-gray-300">
-        <li>HTML5</li>
-        <li>Tailwind CSS (mobile-first layout)</li>
-        <li>Vanilla JavaScript</li>
-        <li>GitHub Pages deployment</li>
-      </ul>
-    </section>
-
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-2">Challenges & Solutions</h2>
-      <p class="text-gray-300">
-        Balancing heavy personality and themed visuals with usability required
-        collapsible sections, clear hierarchy, and careful spacing—especially
-        on mobile screens.
-      </p>
-    </section>
-
-    <section class="flex gap-6 text-green-400">
-      <a href="https://rschipman.github.io/PortfolioSite.github.io/projects/rhowyen.html" target="_blank" class="hover:text-green-300">
-        View Live Site →
-      </a>
-      <a href="https://github.com/Rschipman/rhowyen.github.io" target="_blank" class="hover:text-green-300">
-        View Code →
-      </a>
-    </section>
-
-  </main>
+  <!-- Footer -->
+  <footer class="mt-auto text-center p-4 border-t border-gray-800 text-gray-500 text-sm">
+    © 2025 Roan Chipman
+  </footer>
 
 </body>
 </html>
