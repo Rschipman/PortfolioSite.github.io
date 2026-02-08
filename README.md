@@ -64,5 +64,6 @@ Roan Chipman
 Frontend Developer & Web Designer
 
 GitHub: [https://github.com/Rschipman](https://github.com/Rschipman)
+
 LinkedIn: [https://www.linkedin.com/in/roanchipman](https://www.linkedin.com/in/roanchipman)
 
